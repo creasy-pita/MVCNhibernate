@@ -1,0 +1,4 @@
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Business\bin\Debug\MVCNhibernate.Business.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Business\bin\Debug\MVCNhibernate.Business.pdb
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Business\obj\Debug\MVCNhibernate.Business.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Business\obj\Debug\MVCNhibernate.Business.pdb

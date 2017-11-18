@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This template was written to work with NHibernate.Test.
+Copy the template to your NHibernate.Test project folder and rename it in hibernate.cfg.xml and change it
+for your own use before compile tests in VisualStudio.
+-->
+<!-- This is the System.Data.dll provider for SQL Server -->
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.2" >
+    <session-factory>
+    <!--定制数据库IDriver的类型.-->
+      <property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
+    <!--连接字符串-->
+      <property name="connection.connection_string">
+        Database=test;Data Source=127.0.0.1;User Id=root;Password=root
+      </property>
+    <!--NHibernate方言（Dialect）的类名 - 可以让NHibernate使用某些特定的数据库平台的特性-->
+        <property name="dialect">NHibernate.Dialect.MySQLDialect</property>
+    <!--指定映射文档中所在程序集-->
+    <mapping  assembly="MVCNhibernate.Domain"/>
+    </session-factory>
+</hibernate-configuration>

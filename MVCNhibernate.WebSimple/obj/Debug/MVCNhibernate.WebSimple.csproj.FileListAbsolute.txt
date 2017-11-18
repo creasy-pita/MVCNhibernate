@@ -1,0 +1,14 @@
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.WebSimple.dll.config
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.WebSimple.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.WebSimple.pdb
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\Iesi.Collections.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\NHibernate.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\Iesi.Collections.xml
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\NHibernate.xml
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\obj\Debug\MVCNhibernate.WebSimple.csprojResolveAssemblyReference.cache
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\obj\Debug\MVCNhibernate.WebSimple.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\obj\Debug\MVCNhibernate.WebSimple.pdb
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Domain.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Domain.pdb
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Data.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Data.pdb

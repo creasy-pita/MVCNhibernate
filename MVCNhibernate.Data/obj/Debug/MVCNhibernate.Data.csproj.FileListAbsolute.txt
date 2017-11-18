@@ -1,0 +1,9 @@
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Data\bin\Debug\MVCNhibernate.Data.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Data\bin\Debug\MVCNhibernate.Data.pdb
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Data\bin\Debug\Iesi.Collections.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Data\bin\Debug\NHibernate.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Data\bin\Debug\Iesi.Collections.xml
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Data\obj\Debug\MVCNhibernate.Data.csprojResolveAssemblyReference.cache
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Data\obj\Debug\MVCNhibernate.Data.dll
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Data\obj\Debug\MVCNhibernate.Data.pdb
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Data\bin\Debug\NHibernate.xml

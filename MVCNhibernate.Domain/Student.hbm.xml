@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="MVCNhibernate.Domain" namespace="MVCNhibernate.Domain.Entities">
+  <!--类的全称，程序集，数据库表名称-->
+  <class name="MVCNhibernate.Domain.Entities.Student, MVCNhibernate.Domain" table="Student">
+    <id name="StudentId" column="StudentId" type="string"  >
+    </id>
+    <property name="Name" column="name" type="string"  />
+    <property name="Age" column="age" type="int"  />
+  </class>
+</hibernate-mapping>

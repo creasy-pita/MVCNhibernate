@@ -19,9 +19,12 @@ namespace MVCNhibernate.Web.Tests
         public void TestMethod1()
         {
 
-            IList<Student> list = CriteriaQueryWithRestrictions();
-            System.Console.Write("Count:"+ list.Count);
-            
+            //IList<Student> list = CriteriaQueryWithRestrictions();
+            //System.Console.Write("Count:"+ list.Count);
+
+            IList list =  IQueryGetNamedQuery();
+            System.Console.Write("Count:" + list.Count);
+
         }
 
         public IList ScalarQueryList()
@@ -231,6 +234,36 @@ namespace MVCNhibernate.Web.Tests
             }
         }
 
+        /// <summary>
+        /// mysql 创建InputPramWithNameAndReturnScalar 
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public IList IQueryGetNamedQuery()
+        {
+            ISessionFactory sessionFactory = new Configuration().Configure().BuildSessionFactory();
+            ISession session = sessionFactory.OpenSession();
+            /* procedure in mysql 
+                DELIMITER //
+                create procedure InputPramWithNameAndReturnScalar
+                (in number1 int, out square int)
+                BEGIN
+	                #select number1+1 into square;
+	                set square =number1*number1;
+                END;
+                //
+                DELIMITER 
+             调用
+             SET @p_inout=1;
+#CALL InputPramWithNameAndReturnScalar(10,@p_inout) ;
+ CALL `test`.`InputPramWithNameAndReturnScalar`(10, @p_inout);
+SELECT @p_inout;
+             */
+            IQuery query = session.GetNamedQuery("InputPramWithNameAndReturnScalar");
+            return query.SetInt32("number1", 10).List();
+            
+        }
+
         public void SqlQuery()
         {
             ISessionFactory sessionFactory =  new Configuration().Configure().BuildSessionFactory();
@@ -241,5 +274,7 @@ namespace MVCNhibernate.Web.Tests
             ISQLQuery query = session.CreateSQLQuery(sqlString);
 
         }
+
+
     }
 }

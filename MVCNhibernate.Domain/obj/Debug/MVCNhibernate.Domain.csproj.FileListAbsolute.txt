@@ -2,3 +2,4 @@ E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Domain\bin\Debug\MVCNhibern
 E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Domain\bin\Debug\MVCNhibernate.Domain.pdb
 E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Domain\obj\Debug\MVCNhibernate.Domain.dll
 E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Domain\obj\Debug\MVCNhibernate.Domain.pdb
+E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.Domain\obj\Debug\MVCNhibernate.Domain.csprojResolveAssemblyReference.cache

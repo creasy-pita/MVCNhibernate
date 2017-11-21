@@ -12,3 +12,17 @@ E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate
 E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Domain.pdb
 E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Data.dll
 E:\work\myproject\dotnet\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Data.pdb
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.WebSimple.dll.config
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.WebSimple.dll
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.WebSimple.pdb
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\Iesi.Collections.dll
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Data.dll
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Domain.dll
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\NHibernate.dll
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Data.pdb
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\MVCNhibernate.Domain.pdb
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\Iesi.Collections.xml
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\bin\NHibernate.xml
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\obj\Debug\MVCNhibernate.WebSimple.csprojResolveAssemblyReference.cache
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\obj\Debug\MVCNhibernate.WebSimple.dll
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.WebSimple\obj\Debug\MVCNhibernate.WebSimple.pdb

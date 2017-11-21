@@ -22,9 +22,14 @@ namespace MVCNhibernate.Web.Tests
             //IList<Student> list = CriteriaQueryWithRestrictions();
             //System.Console.Write("Count:"+ list.Count);
 
-            IList list =  IQueryGetNamedQuery();
-            System.Console.Write("Count:" + list.Count);
+            //IList list =  IQueryGetNamedQuery();
+            //System.Console.Write("Count:" + list.Count);
 
+           // ExecuteStoreProcedureByIDbCommandIDataParameter();
+            CommonDataParameter[] cp = new CommonDataParameter[2];
+            int i = ExecuteStoreProcedureByIDbCommandIDataParameteCommonParameter(null, cp);
+            System.Console.Write("square 10 =" + cp[1].Value);
+            
         }
 
         public IList ScalarQueryList()
@@ -276,5 +281,119 @@ SELECT @p_inout;
         }
 
 
+        public void SqlQuery1()
+        {
+            ISessionFactory sessionFactory = new Configuration().Configure().BuildSessionFactory();
+
+            ISession session = sessionFactory.OpenSession();
+            //session.CreateSQLQuery()
+        }
+
+        /// <summary>
+        /// 可以传入
+        /// </summary>
+        /// <returns></returns>
+        public int ExecuteStoreProcedureByIDbCommandIDataParameter()
+        {
+
+            ISessionFactory sessionFactory = new Configuration().Configure().BuildSessionFactory();
+            ISession session = sessionFactory.OpenSession();
+            try
+            {
+                IDbCommand cmd = session.Connection.CreateCommand();
+                cmd.CommandText = "InputPramWithNameAndReturnScalar";
+                cmd.CommandType = CommandType.StoredProcedure;
+                IDataParameter dp = cmd.CreateParameter();
+                dp.DbType = DbType.Int32;
+                dp.ParameterName = "number1";
+                dp.Direction = ParameterDirection.Input;
+                dp.Value = 10;
+                cmd.Parameters.Add(dp);
+
+                 IDataParameter dp2 = cmd.CreateParameter();
+                dp2.DbType = DbType.Int32;
+                dp2.ParameterName = "square";
+                dp2.Direction = ParameterDirection.Output;
+                dp2.Value = null;
+                cmd.Parameters.Add(dp2);
+                return cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                session.Close();
+
+            }
+        }
+
+        /// <summary>
+        /// 可以传入
+        /// </summary>
+        /// <returns></returns>
+        public int ExecuteStoreProcedureByIDbCommandIDataParameteCommonParameter(string procName, CommonDataParameter[] dataParaArr)
+        {
+
+            ISessionFactory sessionFactory = new Configuration().Configure().BuildSessionFactory();
+            ISession session = sessionFactory.OpenSession(new SQLWatcher());
+            int value = 1;
+            try
+            {
+                IDbCommand cmd = session.Connection.CreateCommand();
+                cmd.CommandText = "InputPramWithNameAndReturnScalar";
+                cmd.CommandType = CommandType.StoredProcedure;
+                dataParaArr[0] = new CommonDataParameter
+                {
+                    DbType = DbType.Int32
+                    ,
+                    ParameterName = "number1"
+                    ,
+                    Direction = ParameterDirection.Input
+                    ,
+                    Value = 10
+                };
+                dataParaArr[1] = new CommonDataParameter
+                {
+                    DbType = DbType.Int32
+                    ,
+                    ParameterName = "square"
+                    ,
+                    Direction = ParameterDirection.Output
+                    ,
+                    Value = 0
+                };
+
+                IDataParameter dp = cmd.CreateParameter();
+                dp.DbType = dataParaArr[0].DbType;
+                dp.ParameterName = dataParaArr[0].ParameterName;
+                dp.Direction = dataParaArr[0].Direction;
+                dp.Value = dataParaArr[0].Value;
+                cmd.Parameters.Add(dp);
+
+                IDataParameter dp2 = cmd.CreateParameter();
+                dp2.DbType = dataParaArr[1].DbType;
+                dp2.ParameterName = dataParaArr[1].ParameterName;
+                dp2.Direction = dataParaArr[1].Direction;
+                dp2.Value = dataParaArr[1].Value;
+                cmd.Parameters.Add(dp2);
+                
+
+                cmd.ExecuteNonQuery();
+                session.Flush();
+                System.Console.Write("square 10 =" + dp2.Value);
+                return 0;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                session.Close();
+
+            }
+        }
     }
 }

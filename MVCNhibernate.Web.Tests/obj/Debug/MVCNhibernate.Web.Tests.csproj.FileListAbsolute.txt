@@ -200,3 +200,5 @@ F:\Workspaces\github\MVCNhibernate\MVCNhibernate.Web.Tests\bin\Debug\zh-Hans\Mic
 F:\Workspaces\github\MVCNhibernate\MVCNhibernate.Web.Tests\obj\Debug\MVCNhibernate.Web.Tests.csprojResolveAssemblyReference.cache
 F:\Workspaces\github\MVCNhibernate\MVCNhibernate.Web.Tests\obj\Debug\MVCNhibernate.Web.Tests.dll
 F:\Workspaces\github\MVCNhibernate\MVCNhibernate.Web.Tests\obj\Debug\MVCNhibernate.Web.Tests.pdb
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.Web.Tests\bin\Debug\MVCNhibernate.Data.dll
+F:\Workspaces\github\MVCNhibernate\MVCNhibernate.Web.Tests\bin\Debug\MVCNhibernate.Data.pdb

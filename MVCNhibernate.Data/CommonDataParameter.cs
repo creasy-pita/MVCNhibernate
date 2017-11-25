@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVCNhibernate.Web.Tests
+namespace MVCNhibernate.Data
 {
-    public class CommonDataParameterOld : IDataParameter
+    public class CommonDataParameter : IDataParameter
     {
 
         public ParameterDirection Direction { get; set; }
@@ -16,7 +16,7 @@ namespace MVCNhibernate.Web.Tests
 
         public string ParameterName { get; set; }
 
-        public object Value { get; set; }
+        public int Value { get; set; }
 
 
         public bool IsNullable
@@ -37,6 +37,18 @@ namespace MVCNhibernate.Web.Tests
         }
 
         public DataRowVersion SourceVersion
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        object IDataParameter.Value
         {
             get
             {

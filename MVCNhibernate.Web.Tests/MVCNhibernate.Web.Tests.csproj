@@ -124,6 +124,7 @@
     <Compile Include="CommonDataParameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
+    <Compile Include="StandardUnitTest.cs" />
     <Compile Include="UnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +134,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MVCNhibernate.Data\MVCNhibernate.Data.csproj">
+      <Project>{e4fff07c-ad97-4724-9a62-769a93802b9c}</Project>
+      <Name>MVCNhibernate.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MVCNhibernate.Domain\MVCNhibernate.Domain.csproj">
       <Project>{0865b101-57ab-4cbe-9d21-aa4a6eaac731}</Project>
       <Name>MVCNhibernate.Domain</Name>

@@ -7,6 +7,7 @@ using NHibernate.Cfg;
 using System.Collections.Generic;
 using System.Data;
 using NHibernate.Criterion;
+using MVCNhibernate.Data;
 
 namespace MVCNhibernate.Web.Tests
 {
